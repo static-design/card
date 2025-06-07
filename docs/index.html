@@ -55,32 +55,35 @@
                             <img src="/placeholder.svg?height=300&width=500" alt="European Card">
                         </div>
                     </div>
-                    <div class="application-form" id="europe-form">
-                        <h3>Оформление заявки - Европейские карты</h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="europe-name">ФИО</label>
-                                <input type="text" id="europe-name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="europe-email">Email</label>
-                                <input type="email" id="europe-email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="europe-phone">Телефон</label>
-                                <input type="tel" id="europe-phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="europe-card">Тип карты</label>
-                                <select id="europe-card">
-                                    <option value="visa">Visa</option>
-                                    <option value="mastercard">Mastercard</option>
-                                    <option value="maestro">Maestro</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="submit-btn">Отправить</button>
-                        </form>
+                    <div class="application-form" id="common-form" style="display: none;">
+                    <h3 id="common-form-title">Оформление заявки</h3>
+                    <form id="form-common">
+                        <div class="form-group">
+                        <label for="region-select">Регион</label>
+                        <select id="region-select" name="region">
+                            <option value="europe">Европа</option>
+                            <option value="england">Англия</option>
+                            <option value="usa">США</option>
+                            <option value="crypto">Криптовалюта</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                        <label for="common-name">ФИО</label>
+                        <input type="text" id="common-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="common-email">Email</label>
+                        <input type="email" id="common-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="common-phone">Телефон</label>
+                        <input type="tel" id="common-phone" name="phone" required>
+                        </div>
+                        <!-- дополнительные поля, например выбор карты, можно показать/скрыть через JS -->
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </form>
                     </div>
+
                 </div>
 
                 <div class="region-content" id="england-content">

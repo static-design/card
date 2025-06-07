@@ -250,14 +250,23 @@ main {
 .form-group select {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  background-color: var(--surface);
+  border: 2px solid var(--border);
+  color: var(--text-main);
   border-radius: 5px;
   font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 
 .submit-btn {
   background-color: var(--accent);
-  color: #333;
+  color: var(--border);
   border: none;
   padding: 12px 25px;
   border-radius: 5px;
