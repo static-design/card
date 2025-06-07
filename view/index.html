@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign Card Payment Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="/placeholder.svg?height=50&width=50" alt="Logo">
+                <span>CardPay</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" data-section="home">Главная</a></li>
+                    <li><a href="#" data-section="contact">Связь</a></li>
+                    <li><a href="#" data-section="reviews">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Оплата услуг зарубежными картами</h1>
+                <p>Лучший способ оплачивать покупки и получать кэшбэк. С нашим сервисом клиенты получают удобный способ оплаты зарубежными картами.</p>
+            </section>
+
+            <section class="payment-options">
+                <div class="tabs">
+                    <button class="tab-btn active" data-region="europe">Европа</button>
+                    <button class="tab-btn" data-region="england">Англия</button>
+                    <button class="tab-btn" data-region="usa">США</button>
+                    <button class="tab-btn" data-region="crypto">Криптовалюта</button>
+                </div>
+            </section>
+
+            <section class="content-area">
+                <div class="region-content active" id="europe-content">
+                    <div class="card-info">
+                        <div class="card-details">
+                            <h2>Европейские карты</h2>
+                            <p>Принимаем карты всех европейских банков. Быстрые переводы и минимальные комиссии.</p>
+                            <ul>
+                                <li>Кэшбэк до 25%</li>
+                                <li>Без комиссии</li>
+                                <li>Мгновенные переводы</li>
+                            </ul>
+                            <button class="action-btn">Оформить заявку</button>
+                        </div>
+                        <div class="card-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="European Card">
+                        </div>
+                    </div>
+                    <div class="application-form" id="europe-form">
+                        <h3>Оформление заявки - Европейские карты</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="europe-name">ФИО</label>
+                                <input type="text" id="europe-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="europe-email">Email</label>
+                                <input type="email" id="europe-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="europe-phone">Телефон</label>
+                                <input type="tel" id="europe-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="europe-card">Тип карты</label>
+                                <select id="europe-card">
+                                    <option value="visa">Visa</option>
+                                    <option value="mastercard">Mastercard</option>
+                                    <option value="maestro">Maestro</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="region-content" id="england-content">
+                    <div class="card-info">
+                        <div class="card-details">
+                            <h2>Английские карты</h2>
+                            <p>Работаем со всеми банками Великобритании. Надежные и безопасные платежи.</p>
+                            <ul>
+                                <li>Кэшбэк до 20%</li>
+                                <li>Низкая комиссия</li>
+                                <li>Поддержка 24/7</li>
+                            </ul>
+                            <button class="action-btn">Оформить заявку</button>
+                        </div>
+                        <div class="card-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="UK Card">
+                        </div>
+                    </div>
+                    <div class="application-form" id="england-form">
+                        <h3>Оформление заявки - Английские карты</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="england-name">ФИО</label>
+                                <input type="text" id="england-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="england-email">Email</label>
+                                <input type="email" id="england-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="england-phone">Телефон</label>
+                                <input type="tel" id="england-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="england-card">Тип карты</label>
+                                <select id="england-card">
+                                    <option value="visa">Visa UK</option>
+                                    <option value="mastercard">Mastercard UK</option>
+                                    <option value="amex">American Express</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="region-content" id="usa-content">
+                    <div class="card-info">
+                        <div class="card-details">
+                            <h2>Американские карты</h2>
+                            <p>Принимаем карты всех крупных банков США. Быстрые и безопасные транзакции.</p>
+                            <ul>
+                                <li>Кэшбэк до 30%</li>
+                                <li>Выгодный курс обмена</li>
+                                <li>Быстрое зачисление</li>
+                            </ul>
+                            <button class="action-btn">Оформить заявку</button>
+                        </div>
+                        <div class="card-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="USA Card">
+                        </div>
+                    </div>
+                    <div class="application-form" id="usa-form">
+                        <h3>Оформление заявки - Американские карты</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="usa-name">ФИО</label>
+                                <input type="text" id="usa-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="usa-email">Email</label>
+                                <input type="email" id="usa-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="usa-phone">Телефон</label>
+                                <input type="tel" id="usa-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="usa-card">Тип карты</label>
+                                <select id="usa-card">
+                                    <option value="visa">Visa USA</option>
+                                    <option value="mastercard">Mastercard USA</option>
+                                    <option value="discover">Discover</option>
+                                    <option value="amex">American Express</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="region-content" id="crypto-content">
+                    <div class="card-info">
+                        <div class="card-details">
+                            <h2>Криптовалюта</h2>
+                            <p>Принимаем все основные криптовалюты. Безопасные и анонимные транзакции.</p>
+                            <ul>
+                                <li>Минимальные комиссии</li>
+                                <li>Мгновенные переводы</li>
+                                <li>Полная анонимность</li>
+                            </ul>
+                            <button class="action-btn">Оформить заявку</button>
+                        </div>
+                        <div class="card-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Cryptocurrency">
+                        </div>
+                    </div>
+                    <div class="application-form" id="crypto-form">
+                        <h3>Оформление заявки - Криптовалюта</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="crypto-name">ФИО или псевдоним</label>
+                                <input type="text" id="crypto-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="crypto-email">Email</label>
+                                <input type="email" id="crypto-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="crypto-currency">Криптовалюта</label>
+                                <select id="crypto-currency">
+                                    <option value="btc">Bitcoin</option>
+                                    <option value="eth">Ethereum</option>
+                                    <option value="usdt">USDT</option>
+                                    <option value="xmr">Monero</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="crypto-wallet">Адрес кошелька</label>
+                                <input type="text" id="crypto-wallet" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Logo">
+                    <span>CardPay</span>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Связь</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>Email: info@cardpay.com</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Социальные сети</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TG</a>
+                        <a href="#" class="social-icon">VK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CardPay. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
