@@ -1,9 +1,10 @@
   :root {
     --bg: #171B20;
     --surface: #262C36;
-    --text-accent: #7B89A3;
-    --text-main: #FFF;
+    --text-accent: #FFF;
+    --text-main: #7B89A3;
     --accent: #DAC752;
+    --accent-dark: #ac9d3b;
     --border: #455063;
   }
 
@@ -210,12 +211,13 @@ main {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  box-shadow: 0 4px 0 var(--accent-dark);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .action-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 5px var(--accent);
+  transform: translateY(4px);
+  box-shadow: 0 0px 0px var(--accent-dark);
 }
 
 .application-form {

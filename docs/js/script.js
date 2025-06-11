@@ -8,20 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const regionSelect = document.getElementById("region-select");
   const commonForm = document.getElementById("form-common");
 
-  // переключение табов (без изменений)
   tabButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       tabButtons.forEach(b => b.classList.remove("active"));
       regionContents.forEach(c => c.classList.remove("active"));
       btn.classList.add("active");
       document.getElementById(`${btn.dataset.region}-content`).classList.add("active");
-      // при смене региона скрываем открытую форму
-      commonFormWrapper.style.display = "none";
       actionButtons.forEach(a => a.textContent = "Оформить заявку");
     });
   });
 
-  // показываем общую форму при клике на любую кнопку «Оформить заявку»
   actionButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const region = btn.closest(".region-content").id.replace("-content", "");
